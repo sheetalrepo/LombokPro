@@ -7,7 +7,7 @@ Chapter 1: https://www.youtube.com/watch?v=UKhXGomBkKI
 2. Builder Pattern (PersonLombok.java)  | Chp 1
 3. Builder Pattern (BuilderUserLombok.java) - another example
 
-4. logging
+4. Logging (EmployeeTest.java vs PersonTest.java)
 5. Immutable class (ValueStudentLombok.java)
 	@Value (Immutable class) https://devwithus.com/lombok-value-annotation/
 6. StaticConstructor (StaticConstructor.java)

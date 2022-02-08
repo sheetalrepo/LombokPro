@@ -2,6 +2,9 @@ package basics;
 
 import java.util.Date;
 
+import lombok.extern.java.Log;
+
+@Log
 public class PersonTest {
 
 	public static void normalBuilderMethod() {
@@ -11,7 +14,8 @@ public class PersonTest {
 				.withLastName("Singh")
 				.withDob(new Date(2000,2,25))
 				.build();
-		System.out.println(person);
+		log.info(person.toString());
+		
 	}
 	
 	public static void lombokBuilderMethod() {
@@ -21,14 +25,14 @@ public class PersonTest {
 				.lastname("Singh")
 				.dob(new Date(2000,2,25))
 				.build();
-		System.out.println(personLombok);
+		log.info(personLombok.toString());
 	}
 	
 	public static void lombokBuilderMethod2() {
 		PersonLombok personLombok = PersonLombok.builder()
 				.empId("12345")
 				.build();
-		System.out.println(personLombok);
+		log.info(personLombok.toString());
 	}
 	
 	public static void main(String[] args) {
